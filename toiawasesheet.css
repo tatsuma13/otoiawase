@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.first{
+    background-color: rgb(230, 223, 185);
+}
+
+.first h1{
+text-align: center;
+font-family: serif;
+}
+
+.first p{
+    text-align: center;
+    font-family: serif;
+}
+
