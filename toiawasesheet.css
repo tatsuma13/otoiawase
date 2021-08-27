@@ -1,16 +1,109 @@
 @charset "UTF-8";
 
-.first{
-    background-color: rgb(230, 223, 185);
+html{
+    background-color: rgba(226, 219, 119, 0.87);
+    font-family: 'Arial Black',sans-serif;
+
 }
 
-.first h1{
-text-align: center;
-font-family: serif;
+
+.top h1{
+font-size: 50px;
+position: fixed;
+
+}
+
+.first{
+    　position: absolute;
+     line-height: 1cm;
+
 }
 
 .first p{
-    text-align: center;
-    font-family: serif;
+   font-size: large;
+   position: absolute;
+   margin-left: 10cm;
+   margin-top: 4cm;
+
 }
+
+.first input[type="text"][name="fullname"]{
+ width: 200px;
+
+}
+
+.first input[type="text"][name="add"]{
+    width: 200px;
+
+}
+
+.first input[type="email"][name="email"]{
+    width: 200px;
+
+}
+
+.first input[type="text"][name="age"]{
+    width: 50px;
+
+}
+
+.first input[type="submit"][name="verification"]{
+    margin: auto;
+
+}
+
+.first input[type="submit"][name="verification"] {
+        margin-left: 13cm;
+        margin-top: 6cm;
+        display       : inline-block;
+        font-size     : 12pt;        /* 文字サイズ */
+        text-align    : center;      /* 文字位置   */
+        cursor        : pointer;     /* カーソル   */
+        padding       : 17px 49px;   /* 余白       */
+        background    : #a8a6a6;     /* 背景色     */
+        color         : #000000;     /* 文字色     */
+        line-height   : 1em;         /* 1行の高さ  */
+        transition    : .3s;         /* なめらか変化 */
+        font-family: 'Arial Black',sans-serif;
+        letter-spacing: 2px;
+
+    }
+      .button:hover {
+      }
+
+
+
+
+
+/*--確認画面--*/
+.kakunin h1{
+        font-size: 50px;
+        position: fixed;
+}
+
+
+.second{
+    text-align: center;
+    font-family: 'Arial Black',sans-serif;
+
+}
+
+.second p{
+    font-size: large;
+    position: absolute;
+    margin-left: 10cm;
+    margin-top: 4cm;
+
+ }
+ 
+
+
+/*--完了画面--*/
+.third{
+    text-align: center;
+    font-family: 'Arial Black',sans-serif;
+    font-size: 50px;
+    margin-top: 4cm;
+}
+
 
