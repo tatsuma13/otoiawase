@@ -1,15 +1,14 @@
 <?php
 session_start();
-$mode = "input";
 if(isset ($_POST["back"]) && $_POST["back"]){
-    
+
 }elseif(isset ($_POST["verification"]) && $_POST["verification"]){
+
     $_SESSION["fullname"] =$_POST["fullname"];
     $_SESSION["add"] =$_POST["add"];
     $_SESSION["email"] =$_POST["email"];
     $_SESSION["age"] =$_POST["age"];
     $_SESSION["gender"] =$_POST["gender"];
-    $mode = "verification";
 
 }elseif(isset ($_POST["send"]) && $_POST["send"]){
    $message = "お問い合わせを受け付けました\r\n"
@@ -23,8 +22,6 @@ if(isset ($_POST["back"]) && $_POST["back"]){
             mail("onakahara1525@gamil.com","お問い合せを受け付けました","$massage");
 
     $_SESSION = array();
-    $mode = "send";
-
 }else {
     $_SESSION = array();
 }
@@ -37,13 +34,17 @@ if(isset ($_POST["back"]) && $_POST["back"]){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="toiawasesheet.css" >
-    <title>入力画面</title>
+    <title>確認画面</title>
 </head>
 <body>
 
+<div class="top">
+    <h1>CONTACT</h1>
+</div>
+
 <!--確認画面-->
 <div class="second">
-<form action="./toiawase.php" method="post">
+<form action="./toiawase3.php" method="post">
 <p>Name<br><?php echo $_SESSION["fullname"] ?></p><br>
 <br>
 
@@ -53,14 +54,18 @@ if(isset ($_POST["back"]) && $_POST["back"]){
 <p>Email<br><?php echo $_SESSION["email"]?></p><br>
 <br>
 
-<p>Age</p><br><?php echo $_SESSION["age"]?><p>歳</p><br>
+<p>Age<br><?php echo $_SESSION["age"]?></p><br>
 <br>
 
 <p>Gender<br><?php echo $_SESSION["gender"]?></p><br>
 <br>
 
-<input type="submit" name="back" value="Back">
-<input type="submit" name="send" value="Submit">
+<button type="button" name="back" onclick="history.back()"><< Back</button>
+<button type="button" name="send">Submit >></button>
+
+
+
+
 </form>
 </div>
 

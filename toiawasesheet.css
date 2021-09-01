@@ -14,7 +14,6 @@ position: fixed;
 }
 
 .first{
-    　position: absolute;
      line-height: 1cm;
 
 }
@@ -59,21 +58,15 @@ position: fixed;
         font-size     : 12pt;        /* 文字サイズ */
         text-align    : center;      /* 文字位置   */
         cursor        : pointer;     /* カーソル   */
-        padding       : 17px 49px;   /* 余白       */
-        background    : #a8a6a6;     /* 背景色     */
+        padding       : 20px 30px;   /* 余白       */
+        background    : #ffffff;     /* 背景色     */
         color         : #000000;     /* 文字色     */
         line-height   : 1em;         /* 1行の高さ  */
         transition    : .3s;         /* なめらか変化 */
         font-family: 'Arial Black',sans-serif;
-        letter-spacing: 2px;
 
     }
-      .button:hover {
-      }
-
-
-
-
+    
 
 /*--確認画面--*/
 .kakunin h1{
@@ -83,7 +76,6 @@ position: fixed;
 
 
 .second{
-    text-align: center;
     font-family: 'Arial Black',sans-serif;
 
 }
@@ -95,7 +87,40 @@ position: fixed;
     margin-top: 4cm;
 
  }
+
+ .second button[type="button"][name="back"] {
+    margin-left: 12cm;
+    margin-top: 6cm;
+    display       : inline-block;
+    font-size     : 12pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 20px 30px;   /* 余白       */
+    background    : #a5a5a5;     /* 背景色     */
+    color         : #000000;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;        /* なめらか変化 */
+    font-family: 'Arial Black',sans-serif;
+
+}
+  
+
+  .second button[type="button"][name="send"] {
+    display       : inline-block;
+    font-size     : 12pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 20px 30px;   /* 余白       */
+    background    : #ffffff;     /* 背景色     */
+    color         : #000000;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    font-family: 'Arial Black',sans-serif;
+
+}
  
+
+
 
 
 /*--完了画面--*/
