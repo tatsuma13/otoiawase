@@ -1,3 +1,25 @@
+<?php
+$error =array();
+
+if(isset ($_POST["verification"]) && $_POST["verification"]){
+}
+elseif(!empty($_POST["fullname"])){
+        $error[] = "Is blank！";
+    }
+    elseif(!empty($_POST["add"])){
+        $error[] = "Is blank！";
+    }
+    elseif(!empty($_POST["email"])){
+        $error[] = "Is blank！"; 
+    }
+    elseif(!empty($_POST["age"])){
+        $error[] = "Is blank！"; 
+    }
+   elseif(!empty($_POST["gender"])){
+        $error[] = "Please check";
+   }
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -15,7 +37,8 @@
 </div>
 
 <div class="first">
-<form action="./toiawase2.php" method="post">
+<form action="./toiawase2.php" method="POST">
+
 <p>Name<br>
 <input type="text" name="fullname" value="<?php $_SESSION["fullname"]?>"></p><br>
 <br>
@@ -34,6 +57,10 @@
 <br>
 
 <input type="submit" name="verification" value="Confirm >>">
+
+
+
+
 
 </form>
 </div>
