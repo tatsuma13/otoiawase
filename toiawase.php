@@ -1,23 +1,25 @@
 <?php
+function validation($data){
 $error =array();
 
 if(isset ($_POST["verification"]) && $_POST["verification"]){
 }
-elseif(!empty($_POST["fullname"])){
+if(empty($data["fullname"])){
         $error[] = "Is blank！";
     }
-    elseif(!empty($_POST["add"])){
+if(empty($data["add"])){
         $error[] = "Is blank！";
     }
-    elseif(!empty($_POST["email"])){
+if(empty($data["email"])){
         $error[] = "Is blank！"; 
     }
-    elseif(!empty($_POST["age"])){
+if(empty($data["age"])){
         $error[] = "Is blank！"; 
     }
-   elseif(!empty($_POST["gender"])){
+if(empty($data["gender"])){
         $error[] = "Please check";
    }
+}
 ?>
 
 <!DOCTYPE html>
